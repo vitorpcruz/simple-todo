@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\simple-todo\\backend\\STD\\STD.csproj": {}
+    "C:\\projects\\std2\\backend\\STD\\STD.csproj": {}
   },
   "projects": {
-    "C:\\projects\\simple-todo\\backend\\STD\\STD.csproj": {
+    "C:\\projects\\std2\\backend\\STD\\STD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\simple-todo\\backend\\STD\\STD.csproj",
+        "projectUniqueName": "C:\\projects\\std2\\backend\\STD\\STD.csproj",
         "projectName": "STD",
-        "projectPath": "C:\\projects\\simple-todo\\backend\\STD\\STD.csproj",
+        "projectPath": "C:\\projects\\std2\\backend\\STD\\STD.csproj",
         "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\simple-todo\\backend\\STD\\obj\\",
+        "outputPath": "C:\\projects\\std2\\backend\\STD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
