@@ -1,0 +1,19 @@
+﻿version: '3'
+
+services:
+  db_pgsql:
+    restart: always
+    image: postgres:latest
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_PASSWORD=mysecretpassword
+      - DEBUG=false
+      - DB_USER=admin
+      - DB_PASS=mysecretpassword
+      - DB_NAME=todo_db
+    volumes:
+      - postgresql:/var/lib/postgresql
+
+volumes:
+  postgresql:

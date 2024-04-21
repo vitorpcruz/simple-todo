@@ -1,0 +1,31 @@
+@STD_HostAddress = https://localhost:4201
+
+GET {{STD_HostAddress}}/todos
+Accept: application/json
+
+###
+
+POST {{STD_HostAddress}}/todos
+# Accept: application/json
+Content-Type: application/json  
+  
+{
+  "title": "Comprar cereais matinais"
+}
+
+###
+
+PUT {{STD_HostAddress}}/todos/2
+# Accept: application/json
+Content-Type: application/json  
+  
+{
+  "title": "Passar com o cachorro",
+  "finished": true
+}
+
+###
+DELETE {{STD_HostAddress}}/todos/5
+# Accept: application/json
+Content-Type: application/json  
+  
