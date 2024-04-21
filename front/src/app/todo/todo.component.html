@@ -1,0 +1,51 @@
+<div class="input_container">
+  <h3>Lista de Tarefas</h3>
+  <input
+    type="text"
+    placeholder="Criar Todo"
+    #inputTodo
+    (keyup.enter)="add(inputTodo.value); inputTodo.value = ''"
+  />
+  <button class="new-todo" (click)="add(inputTodo.value); inputTodo.value = ''">
+    <i class="fa fa-plus"></i>
+  </button>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Finalizado</th>
+          <th>Últ. Modificação</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody width="100%" cellspacing="0" cellpadding="100%">
+        @if(this.todoList.length > 0) {
+        <tr *ngFor="let todo of todoList">
+          <td>{{ todo.id }}</td>
+          <td>{{ todo.title }}</td>
+          <td>
+            @if (todo.finished) {
+            <i class="fa fa-check" aria-hidden="true"></i>
+            } @else {
+            <i class="fa fa-times" aria-hidden="true"></i>
+            }
+          </td>
+          <td>{{ todo.lastUpdatedAt }}</td>
+          <td>
+            @if (!todo.finished) {
+            <button class="add-todo" (click)="finishTodo(todo.id)">
+              <i class="fa fa-check-square" aria-hidden="true"></i>
+            </button>
+            }
+            <button class="remove-todo" (click)="remove(todo.id)">
+              <i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

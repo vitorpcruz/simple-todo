@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+.head_container {
+  background-color: #f4f2ee;
+  height: 200px;
+  width: 100%;
+}
